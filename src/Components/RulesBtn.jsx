@@ -2,7 +2,7 @@
 
 function RulesBtn() {
   return (
-    <div className=" mt-40 h-60 px-2 border bg-gray-200 shadow-lg max-w-3xl">
+    <div className=" absolute mt-40 h-60 px-2 border bg-gray-200 shadow-lg max-w-3xl">
         <h2 className="text-center text-lg font-bold py-2">How to Play Game</h2>
         <div className="px-2 text-base">
             <p className="py-2">
