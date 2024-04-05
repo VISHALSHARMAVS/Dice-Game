@@ -13,16 +13,16 @@ function NumberSelector({setError,error,isSelected,selectedNumber,setSelectedNum
  }
 
   return (
-    <div className="flex flex-col items-end gap-4">
+    <div className="flex flex-col items-end gap-1">
     
-    <div className="flex">
+      <p className=" text-red-600 font-bold  ">{error}</p>
+    <div className="flex ">
       {num.map((value,key)=>(
-        <div key={key}  onClick={()=> numberHandler(value)}  className={`${isSelected===value ? 'bg-black text-white':'bg-white text-black'}   h-16 w-16 border cursor-pointer border-black grid place-items-center text-2xl font-bold`}>{value }</div>))}
+        <div key={key}  onClick={()=> numberHandler(value)}  className={`${isSelected===value ? 'bg-black text-white':'bg-white text-black'}   h-16 w-8 sm:w-16 border cursor-pointer border-black grid place-items-center text-2xl font-bold`}>{value }</div>))}
     </div> 
     <div className="flex items-center justify-between gap-8">
 
-      <p className=" text-red-600 font-bold ">{error}</p>
-        <p className=" font-bold text-2xl ">Select Number</p>
+        <p className=" font-bold text-xl sm:text-2xl ">Select Number</p>
     </div>
     </div>
   )
